@@ -239,30 +239,18 @@ Promettre réduction mesurable du couplage.
 
 ---
 
-# Matrice de décision : Microservices ou pas ?
+## Microservices : pertinents ou prématurés ?
 
---
-## Quand les microservices sont pertinents
-
-- Domaines réellement autonomes
-- Besoin de scalabilité différenciée
-- Plusieurs équipes
-- Déploiements indépendants requis
-- Forte exigence d’isolation
+| ✅ Pertinents | ⛔ Prématurés |
+|---|---|
+| Domaines réellement autonomes | Frontières floues |
+| Scalabilité différenciée | Base partagée fortement couplée |
+| Plusieurs équipes | CI/CD immature |
+| Déploiements indépendants requis | Observabilité faible |
+| Forte exigence d'isolation | Équipe unique |
 
 Note:
 Les microservices répondent à des contraintes organisationnelles et opérationnelles.
-
---
-## Quand ils sont prématurés
-
-- Frontières floues
-- Base partagée fortement couplée
-- CI/CD immature
-- Observabilité faible
-- Équipe unique
-
-Note:
 Sans maturité DevOps, microservices = augmentation du risque.
 
 --
