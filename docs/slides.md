@@ -247,9 +247,9 @@ Promettre réduction mesurable du couplage.
 | Scalabilité différenciée | Base partagée fortement couplée |
 | Plusieurs équipes | CI/CD immature |
 | Déploiements indépendants requis | Observabilité faible |
-| Forte exigence d'isolation | Équipe unique |
 
 Note:
+Aussi pertinents : forte exigence d'isolation. Aussi prématurés : équipe unique.
 Les microservices répondent à des contraintes organisationnelles et opérationnelles.
 Sans maturité DevOps, microservices = augmentation du risque.
 
