@@ -80,7 +80,7 @@ async function main() {
   // Attendre que le contenu (markdown) soit réellement injecté (spécifique à ton cas)
   await page.waitForFunction(() => {
     const t = document.body.innerText || "";
-    return t.includes("QUESTIONS") && t.includes("Support pédagogique") && t.includes("Réutilisation");
+    return t.includes("monolithe extractable") && t.includes("microservices");
   }, { timeout: 30000 });
 
     // Petit buffer pour les fonts/highlight après rendu
