@@ -266,103 +266,27 @@ Note:
 Sans maturité DevOps, microservices = augmentation du risque.
 
 --
-## Impact sur le développement
+## Impact : Développement & Source
 
-Monolithe actuel  
-- simple au départ  
-- effet domino  
-
---
-## Impact sur le développement
-
-Monolithe modulaire  
-- refactor localisé  
-- préparation extraction  
-
---
-## Impact sur le développement
-
-Microservices  
-- autonomie  
-- complexité distribuée  
+| | Monolithe | Modulaire | Microservices |
+|---|---|---|---|
+| **Dev** | Simple, effet domino | Refactor localisé | Autonomie, complexité distribuée |
+| **Source** | 1 repo, collisions | Ownership par module | Repo par service, fragmentation |
 
 Note:
-Le monolithe modulaire apporte déjà beaucoup de bénéfices.
-
---
-## Impact contrôle source
-
-Monolithe  
-- 1 repo  
-- collisions fréquentes  
-
---
-## Impact contrôle source
-
-Modulaire  
-- ownership par module  
-- monorepo maîtrisé  
-
---
-## Impact contrôle source
-
-Microservices  
-- repo par service  
-- fragmentation  
-- gestion versions  
-
-Note:
+Le monolithe modulaire apporte déjà beaucoup de bénéfices sans complexité distribuée.
 Attention aux librairies partagées qui recréent le couplage.
 
 --
-## Impact CI/CD
+## Impact : CI/CD & Base de données
 
-Monolithe  
-- pipeline unique  
-- déploiement global risqué  
-
---
-## Impact contrôle source
-
-Modulaire  
-- pipeline plus fiable  
-- encore artefact global  
-
---
-## Impact contrôle source
-
-Microservices  
-- déploiement indépendant  
-- coût DevOps élevé  
-- observabilité obligatoire  
+| | Monolithe | Modulaire | Microservices |
+|---|---|---|---|
+| **CI/CD** | Pipeline unique, déploiement risqué | Pipeline fiable, artefact global | Déploiement indépendant, coût DevOps élevé |
+| **DB** ⚠️ | Transactions simples, couplage maximal | BD encore partagée | DB par service, cohérence éventuelle, reporting distribué |
 
 Note:
-La plateforme DevOps est un prérequis fort.
-
---
-## Impact Base de Données (critique)
-
-Monolithe  
-- transactions simples  
-- couplage maximal  
-
---
-## Impact Base de Données (critique)
-
-Modulaire  
-- préparation découpage  
-- BD encore partagée  
-
---
-## Impact Base de Données (critique)
-
-Microservices  
-- DB (ou schema) par service  
-- migration complexe  
-- cohérence éventuelle  
-- reporting distribué  
-
-Note:
+La plateforme DevOps est un prérequis fort pour les microservices.
 Sans stratégie data claire, ne pas faire de microservices.
 
 ---
@@ -395,3 +319,11 @@ pas un point de départ.
 Note:
 Pause.
 Laisser la phrase résonner.
+
+---
+
+## Questions
+
+Note:
+Ouvrir la discussion.
+Recueillir les réactions et résistances de l'équipe.
