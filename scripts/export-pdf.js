@@ -13,7 +13,7 @@ const SITE_DIR = path.resolve(__dirname, "..", "docs");
 
 // PDF output (servi par GitHub Pages)
 const OUT_DIR = path.join(SITE_DIR, "exports");
-const OUT_FILE = path.join(OUT_DIR, "dotnet-modernization-overview.pdf");
+const OUT_FILE = path.join(OUT_DIR, "aspnet48-modularization-strategy.pdf");
 
 // Port local pour servir docs/
 const PORT = 4173;
